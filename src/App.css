@@ -1,0 +1,39 @@
+/* Estilos de cada parte da aplicação */
+@import './styles/participante-card.css';
+@import './styles/votacao.css';
+@import './styles/resultado.css';
+
+/* ---------- Estrutura das páginas ---------- */
+.pagina {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: clamp(1.5rem, 4vw, 3rem) 1.25rem 3rem;
+}
+
+.pagina-topo {
+  margin-bottom: 1.5rem;
+}
+
+.pagina-topo h1 {
+  color: var(--palha);
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-bottom: 0.4rem;
+}
+
+.pagina-topo p {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+/* ---------- Grades ---------- */
+.grade-roca {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.grade-peoes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 1rem;
+}
